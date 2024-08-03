@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script>
+</head>
+<body>
+    <header>
+        <h1>Habit Tracker</h1>
+    </header>
+    <main id="tracker">
+        <h2>Your Habits</h2>
+        <div id="habit-list">
+            <!-- Habit items will be dynamically added here -->
+        </div>
+        <div id="add-habit">
+            <input type="text" id="habit-input" placeholder="Enter a new habit">
+            <select id="habit-category">
+                <option value="Health">Health</option>
+                <option value="Productivity">Productivity</option>
+                <option value="Learning">Learning</option>
+                <!-- Add more options as needed -->
+            </select>
+            <button id="add-button">Add Habit</button>
+            <button id="reset-button">Reset Habits</button>
+        </div>
+        <div id="chart-container">
+            <canvas id="habit-chart"></canvas>
+            <p>Completed Habits: <span id="completed-count">0</span></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Habit Tracker. All rights reserved.</p>
+        <p>Contact: <a href="mailto:contact@example.com">contact@example.com</a></p>
+        <p>Feedback: <a href="feedback.html">Give Feedback</a></p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
